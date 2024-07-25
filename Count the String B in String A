@@ -1,0 +1,21 @@
+//The program must accept a two string s1 and s2 as the input the s2 length always is 2 the program must print the no.of occurrance of s2 in s1
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the first string:");
+        String a = sc.nextLine();
+        System.out.println("Enter the second string:");  
+        String b = sc.nextLine();
+        int count=0;
+        for (int i=0; i<=a.length()-2; i++) {
+            if(a.substring(i, i + 2).equals(b)){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+
